@@ -5,6 +5,9 @@ module.exports = () => {
 
     
     router.post('/mensaje', mensajeController.newMensaje)
+    router.get('/saludo', (req, resp) => {
+        resp.send("hola mudno")
+    })
 
     return router;
 
