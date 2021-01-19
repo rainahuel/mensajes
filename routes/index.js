@@ -6,11 +6,7 @@ module.exports = () => {
     
     router.post('/mensaje', mensajeController.newMensaje)
 
-    router.get('/mensajes', (req, res) => {
-        res.status(200).json({
-            mensaje: "hola mudno"
-        })
-    })
+    router.get('/mensaje', mensajeController.getMensaje)
 
     return router;
 
