@@ -7,7 +7,7 @@ const options = {
     useCreateIndex: true
 };
 
-mongoose.connect(process.env.URIDB, options)
+mongoose.connect(process.env.DB_URL, options)
 .then(() => console.log("Conexion base de datos OK!"))
 .catch(err => console.log("Error al conectar con mongoDB: ", err))
 

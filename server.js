@@ -1,4 +1,5 @@
 const express = require("express"); 
+require('dotenv').config()
 require('./config/mongobd');
 const app = express();
 const routes = require('./routes')
