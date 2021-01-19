@@ -23,7 +23,7 @@ exports.getMensaje = (req, res) => {
         if (err) {
             res.status(400).json({
                 ok: false,
-                message: "error al guardar el mensaje"
+                message: "no es posible acceder a los datos"
             })
         }
         res.status(201).json({
