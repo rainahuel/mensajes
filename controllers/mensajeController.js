@@ -7,12 +7,12 @@ exports.newMensaje = (req, res) => {
         if (err) {
             res.status(400).json({
                 ok: false,
-                message: "error al guardar el mensaje"
+                message: "error al enviar el mensaje"
             })
         }
         res.status(201).json({
             ok: true,
-            message: "el mensaje fue guardado con exito!"
+            message: "el mensaje fue enviado con exito!"
         })
     }) 
 } 
