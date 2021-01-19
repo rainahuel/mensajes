@@ -16,19 +16,3 @@ exports.newMensaje = (req, res) => {
         })
     }) 
 } 
-
-exports.getMensaje = (req, res) => {
-
-    Mensaje.find( (err, mensajes) => {
-        if (err) {
-            res.status(400).json({
-                ok: false,
-                message: "no es posible acceder a los datos"
-            })
-        }
-        res.status(201).json({
-            ok: true,
-            messages: mensajes
-        })
-    })
-}

@@ -6,8 +6,6 @@ module.exports = () => {
     
     router.post('/mensaje', mensajeController.newMensaje)
 
-    router.get('/mensaje', mensajeController.getMensaje)
-
     return router;
 
 }
